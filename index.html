@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yzabelle | Art Appreciation Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f7a8d0',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            dark: '#2d1b28',
+                            bgLight: '#fff7f9',
+                            cardBg: '#faf5f7'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        script: ['"Sacramento"', 'cursive']
+                    }
+                }
+            }
+        };
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative antialiased selection:bg-brand-200 selection:text-brand-700 bg-brand-bgLight">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-purple-50/80 backdrop-blur-md border-b border-purple-100/70 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-500 to-purple-300 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                    <span class="font-serif text-xl font-bold">Y</span>
+                </div>
+                <div>
+                    <span class="font-serif text-xl font-bold text-gray-900 tracking-tight block leading-none">Yzabelle's</span>
+                    <span class="text-[10px] tracking-widest text-brand-600 font-semibold uppercase">Art Portfolio</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#home" class="hover:text-brand-600 transition-colors py-1">Home</a>
+                <a href="#about" class="hover:text-brand-600 transition-colors py-1">About</a>
+                <a href="#gearts" class="hover:text-brand-600 transition-colors py-1">Art Appreciation Journey</a>
+                <a href="#collections" class="hover:text-brand-600 transition-colors py-1">Artistic Explorations</a>
+                <a href="#reflection" class="hover:text-brand-600 transition-colors py-1">Reflection</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:text-brand-600 focus:outline-none" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-purple-50/80 border-b border-purple-100/70 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#home" class="mobile-nav-link block py-2 text-gray-700 hover:text-brand-600 font-medium">Home</a>
+            <a href="#about" class="mobile-nav-link block py-2 text-gray-700 hover:text-brand-600 font-medium">About</a>
+            <a href="#gearts" class="mobile-nav-link block py-2 text-gray-700 hover:text-brand-600 font-medium">Art Appreciation Journey</a>
+            <a href="#collections" class="mobile-nav-link block py-2 text-gray-700 hover:text-brand-600 font-medium">Artistic Explorations</a>
+            <a href="#reflection" class="mobile-nav-link block py-2 text-gray-700 hover:text-brand-600 font-medium">Reflection</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HOMEPAGE / HERO -->
+    <section id="home" class="hero-bg min-h-[calc(100vh-5rem)] flex items-center py-12 lg:py-20 relative overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-100/70 text-brand-700 text-xs font-semibold tracking-wide uppercase">
+                        <span>🎨 ART APPRECIATION PORTFOLIO</span>
+                    </div>
+
+                    <h1 class="font-serif text-5xl sm:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
+                        Hello, Welcome! <br>
+                        <span class="font-serif italic font-normal text-brand-600">I'm Yzabelle</span>
+                    </h1>
+
+                    <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Here, you will find a curated exhibition of my required term projects, alongside a personal collection of creative crafts. Each piece represents my honest effort to explore new mediums, 
+                        express key concepts, and bring my childhood love for art to life. Dive in to view each artwork. 
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#gearts" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-white text-gray-800 font-medium border border-pink-200 shadow-sm hover:border-brand-400 hover:text-brand-600 hover:shadow transition-all group">
+                            <span>My Art Appreciation Journey</span>
+                            <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#collections" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-brand-500 text-white font-medium shadow-md hover:bg-brand-600 hover:shadow-lg transition-all group">
+                            <span>View Artistic Exploration</span>
+                            <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative max-w-md w-full">
+                        <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-pink-100">
+                            <img src="Images/Yza.png" 
+                                 alt="Abstract Art Work" 
+                                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section id="about" class="py-20 bg-white/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+                <div class="w-12 h-0.5 bg-gray-400 mx-auto"></div>
+                <h2 class="font-serif text-4xl sm:text-5xl text-gray-900 font-semibold tracking-tight">About me</h2>
+                <p class="text-gray-500 text-sm">Know more about the creator of this portfolio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-sm">
+                        <div class="arch-window rounded-t-full shadow-2xl border-4 border-white bg-stone-200 aspect-[4/5] relative">
+                            <img src="Images/Profile.jpeg" 
+                                 alt="Yzabelle Portrait" 
+                                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6 text-gray-600 leading-relaxed text-sm sm:text-base">
+                    <div class="font-script text-5xl text-brand-600 mb-2 select-none">Ma. Yzabelle B. Macalindong</div>
+                    <p>Hi, I am <strong>Yzabelle!</strong> I'm a 21 year old 4th year Computer Science student stepping outside my usual code editor to explore my creative side. While logic and algorithms take up most of my time, art has always held a special place in my heart.</p>
+                    <p>Ever since I was a kid watching YouTube creators like DrawingWiffWaffles and dreaming of owning my own art supplies, I’ve been fascinated by visual storytelling.</p>
+                    <p>I might not consider myself a master artist, but this portfolio represents my genuine passion, curiosity, and best effort to create something meaningful and worthy of sharing.</p>
+
+                    <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-pink-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: GEARTS ACTIVITIES -->
+    <section id="gearts" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 space-y-3">
+                <span class="px-4 py-1.5 rounded-full bg-pink-100/80 text-brand-700 text-xs font-semibold tracking-wider uppercase">ACADEMIC COURSEWORK</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-gray-900 font-bold">Art Appreciation Journey</h2>
+                <p class="text-gray-600 text-sm sm:text-base">Coursework and submissions organized across the academic terms.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterGEArts(event, 'all')" class="tab-btn gearts-tab active px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">All Terms</button>
+                <button onclick="filterGEArts(event, 'prelim')" class="tab-btn gearts-tab px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Prelim</button>
+                <button onclick="filterGEArts(event, 'midterm')" class="tab-btn gearts-tab px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Midterm</button>
+                <button onclick="filterGEArts(event, 'finals')" class="tab-btn gearts-tab px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Finals</button>
+            </div>
+
+            <!-- Cards Grid -->
+            <div id="gearts-grid" class="flex flex-wrap justify-center gap-8"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: ART COLLECTIONS -->
+    <section id="collections" class="py-20 bg-white/70 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 space-y-3">
+                <span class="px-4 py-1.5 rounded-full bg-pink-100/80 text-brand-700 text-xs font-semibold tracking-wider uppercase">PERSONAL CREATIVE EXPLORATIONS</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-gray-900 font-bold">Artistic Explorations</h2>
+                <p class="text-gray-600 text-sm sm:text-base">Selected personal artworks categorized by artistic technique and medium.</p>
+            </div>
+
+            <!-- Sub Categories Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterCollection(event, 'origami')" class="tab-btn collection-tab active px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Origami</button>
+                <button onclick="filterCollection(event, 'coffee')" class="tab-btn collection-tab px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Coffee Painting</button>
+                <button onclick="filterCollection(event, 'photography')" class="tab-btn collection-tab px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Photography</button>
+                <button onclick="filterCollection(event, 'singing')" class="tab-btn collection-tab px-6 py-2.5 rounded-full text-sm font-medium border border-pink-200 bg-white text-gray-700 hover:border-brand-500 transition-all">Singing</button>
+            </div>
+
+            <!-- Collections Grid -->
+            <div id="collections-grid" class="flex flex-wrap justify-center gap-8"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: REFLECTION -->
+    <section id="reflection" class="reflection-bg py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 sticky top-28">
+                    <div class="space-y-4">
+                        <div class="w-16 h-1 bg-brand-500"></div>
+                        <h2 class="font-serif text-7xl sm:text-6xl text-gray-900 font-bold leading-none tracking-tight">
+                            My Art <br>Reflection
+                        </h2>
+                        <p class="text-brand-600 font-medium text-sm">Looking Forward & Who Am I Becoming</p>
+                        <blockquote class="pt-4 border-t border-pink-200/60 text-xs italic text-gray-600 leading-relaxed"></blockquote>
+                            "I’ve learned to look beyond perfection and just create for the pure joy and feeling of the process."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-white p-8 sm:p-12 rounded-2xl shadow-sm border border-pink-100 text-gray-700 leading-relaxed text-base space-y-6">
+                    <p class="first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:text-brand-600 first-letter:mr-3 first-letter:float-left">
+                        Before taking up this Art Appreciation course, I had always been deeply fascinated by art across its many different forms. I loved how artists could express creativity and convey raw emotion through their work.When I was a kid, I wanted so badly to be great at drawing. My YouTube feed was constantly filled with art creators and tutorials, and I’d save up for art supplies and even a drawing pad to practice.
+                        Yet, despite carrying this deep fondness for art, I routinely questioned whether my own efforts were good enough—or skilled enough—to be considered truly meaningful and beautiful.
+                    </p>
+                    <p>Looking back across the curated works in this portfolio, I can genuinely say I have grown. My art might not be precisely awesome like that of naturally gifted masters, but I have gained something far more valuable: confidence in my own creative voice.
+                       The most special submission for me was my singing performance. I’ve always been insecure about my voice because I didn't think I was good enough, so putting that out there was a huge act of courage for me. It was my way of deciding not to let fear hold me back anymore. 
+                    </p>
+                    <p>Creating these works helped me notice the subtle beauty hidden in shared spaces, everyday moments, and unexpected mediums. I used to believe that art demanded absolute perfection, and that rigid mindset was actually what made it so hard for me to commit to drawing as a beginner. I wanted every stroke to be flawless from the start. Through this course,
+                       I learned that true art holds no space for strict perfectionism; as long as you give your best, you create something that holds its own unique beauty and resonance for others. I have learned to look beyond perfection and simply create for the pure joy and feeling of the process.
+                    </p>
+                    <p>I'm also really thankful for Doc J's guidance and inputs throughout the term. She reignited my dormant curiosity and desire for art, encouraging me to explore diverse mediums and view the world through the lenses of different artists. Looking forward, I am excited to continue growing. I fully expect to step into the museums Doc J spoke about in class—to stand before those legendary artworks in real time, with 
+                        a newfound lens of appreciation, confidence, and quiet wonder. I now look at artwork not merely asking, "Is this pretty?" but rather, "What story does this hold, and how is it created?"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#2d1b28] text-white py-8 border-t border-purple-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+            <p class="font-serif text-lg tracking-wide text-pink-100">GEArts Portfolio</p>
+            <p class="text-pink-200/60 text-xs tracking-wider">&copy; 2026 GEArts Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ARTWORK DETAIL MODAL -->
+    <div id="art-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm transition-opacity">
+        <div class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl overflow-hidden relative animate-in fade-in zoom-in duration-300">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-white/80 hover:bg-white text-gray-800 rounded-full flex items-center justify-center shadow-md transition-all">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modal-content" class="p-6 sm:p-8"></div>
+        </div>
+    </div>
+
+    <!-- APPENDIX / PROOF OF CREATION LIGHTBOX MODAL -->
+    <div id="appendix-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="bg-white max-w-xl w-full rounded-2xl p-6 sm:p-8 relative shadow-2xl space-y-5 my-auto max-h-[90vh] flex flex-col">
+            <button onclick="closeAppendixModal()" aria-label="Close modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center z-10 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="space-y-1 pr-6 flex-shrink-0">
+                <span class="text-xs font-semibold uppercase text-brand-600 tracking-wider">APPENDIX & PROOF OF CREATION</span>
+                <h3 id="appendix-title" class="font-serif text-2xl font-bold text-gray-900 leading-tight">Proof of Creation</h3>
+            </div>
+            <div class="w-full bg-gray-50 rounded-xl overflow-hidden border border-gray-200 flex items-center justify-center flex-shrink min-h-0 py-2">
+                <img id="appendix-img" src="" alt="Proof Image" class="w-auto h-auto max-h-[45vh] max-w-full object-contain block mx-auto">
+            </div>
+            <p id="appendix-desc" class="text-sm text-gray-600 leading-relaxed flex-shrink-0"></p>
+            <div class="flex justify-end pt-2 flex-shrink-0">
+                <button onclick="closeAppendixModal()" class="px-5 py-2.5 rounded-full bg-[#2d1b28] text-white text-xs font-medium hover:bg-brand-600 transition-colors shadow-sm">Back to Artwork Detail</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

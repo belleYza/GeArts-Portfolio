@@ -1,0 +1,98 @@
+.hero-bg {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.80),
+            rgba(255,247,249,0.80)
+        ),
+        url("Images/Jellyfish.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reflection-bg {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.50),
+            rgba(255,247,249,0.80)
+        ),
+        url("Images/Reflection_Bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Base styling */
+body {
+    background-color: #fff7f9;
+    color: #332230;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom arch shape for About Me photo */
+.arch-window {
+    border-top-left-radius: 50% 40%;
+    border-top-right-radius: 50% 40%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+}
+
+/* GEArts sharp square cards */
+.gearts-card {
+    border: 1px solid #ead6e2;
+    border-radius: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gearts-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px -8px rgba(219, 39, 119, 0.15);
+    border-color: #db2777;
+}
+
+/* Art Collection borderless cards */
+.collection-card {
+    border: 1px solid #ead6e2;
+    border-radius: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.collection-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px -8px rgba(219, 39, 119, 0.15);
+     border-color: #db2777;
+}
+
+/* Active tab pill highlighting */
+.tab-btn.active {
+    background-color: #ec4899 !important;
+    color: #ffffff !important;
+    border-color: #ec4899 !important;
+    box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35);
+}
+
+/* Prevent body scrolling when lightboxes are open */
+body.modal-active {
+    overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff7f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f472b6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #db2777;
+}
