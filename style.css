@@ -4,7 +4,7 @@
             rgba(255,255,255,0.80),
             rgba(255,247,249,0.80)
         ),
-        url("Images/Jellyfish.jpg");
+        url("Images/Assets/Jellyfish.jpg");
 
     background-size: cover;
     background-position: center;
@@ -17,7 +17,33 @@
             rgba(255,255,255,0.50),
             rgba(255,247,249,0.80)
         ),
-        url("Images/Reflection_Bg.jpg");
+        url("Images/Assets/Reflection_Bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gearts-bg {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.50),
+            rgba(255,247,249,0.80)
+        ),
+        url("Images/Assets/Background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.collections-bg {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.70),
+            rgba(255,247,249,0.80)
+        ),
+        url("Images/Assets/White.jpg");
 
     background-size: cover;
     background-position: center;

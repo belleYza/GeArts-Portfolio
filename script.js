@@ -26,6 +26,18 @@ const geartsData = [
     },
     {
         id: 'ge3',
+        category: 'midterm',
+        termTag: 'Midterm',
+        title: 'Kalye-Gloc9',
+        subtitle: 'Artwork Analysis',
+        description: 'A comprehensive group artwork analysis examining social commentary, visual imagery, and narrative storytelling in Gloc-9’s music.',
+        fullDesc: 'In this collaborative assignment, our group analyzed the song "Kalye" by Gloc-9 using a structured artwork analysis framework. We explored the intersection of lyricism, rhythmic cadence, and visual motifs to examine how the piece highlights everyday struggles and social realities in urban streets. Beyond evaluating the core template criteria—such as subject matter, formal composition, and contextual background—we expanded our analysis to cover thematic symbolism, emotional tone, and the cultural impact of modern Filipino hip-hop as a medium for socio-political expression.',
+        image: 'Images/Gearts Act/Midterm_ArtworkAnalysis.png',
+        meta: '👥 Group Work',
+        course: 'GEArts'
+    },
+    {
+        id: 'ge4',
         category: 'finals',
         termTag: 'Finals',
         title: 'Dream Escape',
@@ -37,7 +49,7 @@ const geartsData = [
         course: 'GEArts'
     },
     {
-        id: 'ge4',
+        id: 'ge5',
         category: 'finals',
         termTag: 'Finals',
         title: 'Deadline',
@@ -49,7 +61,7 @@ const geartsData = [
         course: 'GEArts'
     },
     {
-        id: 'ge5',
+        id: 'ge6',
         category: 'finals',
         termTag: 'Finals',
         title: 'Echoes of Hope',
@@ -138,7 +150,7 @@ const collectionData = [
         title: 'Acoustic Cover: Young and Beautiful',
         description: 'Acoustic performance exploring emotional resonance, dynamics, and acoustic vocal expression.',
         fullDesc: 'An audio recording cover of my favorite Lana Del Rey song. In this recording, I aimed to capture the signature soft, cinematic feel of the original while infusing the performance with the natural warmth and richness of my own vocal tone.',
-        image: 'Images/Audio cover.webp',
+        image: 'Images/Assets/Audio.jpg',
         proofImage: 'Images/Artistic Collections/Audio_S.png',
         proofDesc: 'Behind-the-scenes footage of the recording session.',
         medium: 'Vocal Performance',
