@@ -389,6 +389,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // ACTIVE BLOCK NAVIGATION HIGHLIGHT (SCROLL SPY)
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const activeClasses = ['bg-white', 'shadow-sm', 'text-brand-700', 'font-semibold'];
+    const inactiveClasses = ['text-gray-600', 'hover:bg-white/60', 'font-medium'];
+
+    function updateActiveNav() {
+        let currentSection = '';
+        const headerOffset = 160; 
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= headerOffset && rect.bottom > headerOffset) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            const targetId = link.getAttribute('href')?.replace('#', '');
+
+            if (targetId && targetId === currentSection) {
+                link.classList.add('active', ...activeClasses);
+                link.classList.remove(...inactiveClasses);
+            } else {
+                link.classList.remove('active', ...activeClasses);
+                link.classList.add(...inactiveClasses);
+            }
+        });
+    }
+
+    // Attach listener and trigger initial calculation
+    window.addEventListener('scroll', updateActiveNav);
+    updateActiveNav();
+
     // Close Modals on Backdrop Click
     window.addEventListener('click', (event) => {
         const artModal = document.getElementById('art-modal');
